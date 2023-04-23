@@ -1,3 +1,38 @@
-Please enjoy playing my Snake Game! The player of this retro video game directs a snake that crawls over a playing field and consumes food to lengthen its tail. In order to advance through the game, the snake must avoid hitting the walls and its own body as well as other obstacles. In this project, I used the Java programming language to make a straightforward Snake Game. The VScode package, which offers a straightforward and user-friendly interface for creating 2D games, was used to build the game.
+//Bryam Sanchez
+//Kendrick Belizaire
 
+import java.util.Random;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+
+public class Food extends Rectangle implements Drawable {
+
+private static final int FOOD_SIZE = 10;
+
+public Food() {
+    super(FOOD_SIZE, FOOD_SIZE, Color.RED);
+    generateNewLocation();
+}
+
+public void generateNewLocation() {
+
+    //Creates a new random object
+    Random random = new Random();
+
+    //gets a random x value
+    int x = random.nextInt(450) / 10 * 10;
+
+    //gets a random y value
+    int y = random.nextInt(450) / 10 * 10;
+
+    //sets the food's locations to the randomly generated values.
+    setX(x);
+    setY(y);
+}
+
+@Override
+public void draw() {
+    
+}
+}
 
