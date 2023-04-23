@@ -1,3 +1,24 @@
-Please enjoy playing my Snake Game! The player of this retro video game directs a snake that crawls over a playing field and consumes food to lengthen its tail. In order to advance through the game, the snake must avoid hitting the walls and its own body as well as other obstacles. In this project, I used the Java programming language to make a straightforward Snake Game. The VScode package, which offers a straightforward and user-friendly interface for creating 2D games, was used to build the game.
+//Bryam Sanchez
+//Kendrick Belizaire
+
+import javafx.scene.Group;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+
+public class Board extends Rectangle implements Drawable {
+
+//Constructs the Board.
+public Board(int width, int height, Group root) {
+    super(width, height);
+    setFill(Color.BLACK);
+    setStroke(Color.WHITE);
+    root.getChildren().add(this);
+}
+
+@Override
+public void draw() {
+
+}
+}
 
 
