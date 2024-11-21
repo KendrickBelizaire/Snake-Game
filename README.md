@@ -1,4 +1,4 @@
-Snake Game 🐍
+## Snake Game 🐍
 
 A classic Snake game implemented in Java, where the player controls a growing snake that must avoid walls and itself while eating food to score points.  
 
